@@ -1,0 +1,11 @@
+{
+  "network": "Anvil-local",
+  "chainId": 10143,
+  "publicMonadTestnet": false,
+  "contract": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+  "tx": "0x54391865b47eac30ea86eb828b0df143c5f9cdbb4f9d8b3c13715bd114a9b5ae",
+  "digest": "0f28a1e602637c40f8db274717da1ad799a1a286080aaee6f0b724a492f7a5c7",
+  "author": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+  "exactReplay": true,
+  "tamperedDigestRejected": true
+}

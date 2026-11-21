@@ -1,0 +1,2501 @@
+{
+  "format": "genesis.monad-gateway-read-baseline.v1",
+  "measuredAt": "2026-11-19T07:21:18.607Z",
+  "publicMonadTestnet": true,
+  "chainId": 10143,
+  "rpc": "https://testnet-rpc.monad.xyz",
+  "contract": "0xb1EEA6F45B37098f62Fe6cA484441F846eb42C1A",
+  "actor": "0xc338e05fD4F8322E1562DB052c42995223254B97",
+  "gatewaySource": "frontend/community/gateway.js#CommunityGateway.read",
+  "configuration": {
+    "samples": 30,
+    "warmup": 3,
+    "delayMs": 500,
+    "timeoutMs": 12000,
+    "actorIncluded": true
+  },
+  "preflight": {
+    "ok": true,
+    "durationMs": 633.001,
+    "httpRequestCount": 2,
+    "rpcMethodCounts": {
+      "eth_chainId": 1,
+      "eth_getCode": 1
+    }
+  },
+  "warmupSummary": {
+    "count": 3,
+    "durationMs": {
+      "min": 391.614,
+      "mean": 466.277,
+      "p50": 394.133,
+      "p95": 613.085,
+      "max": 613.085
+    }
+  },
+  "summary": {
+    "sampleCount": 30,
+    "successCount": 30,
+    "failureCount": 0,
+    "successRate": 1,
+    "durationMs": {
+      "min": 283.983,
+      "mean": 352.495,
+      "p50": 352.8,
+      "p95": 431.61,
+      "max": 454.078
+    },
+    "httpRequestsPerRead": {
+      "min": 7,
+      "mean": 7,
+      "p50": 7,
+      "p95": 7,
+      "max": 7
+    },
+    "totalHttpRequestCount": 210,
+    "rpcMethodCounts": {
+      "eth_blockNumber": 30,
+      "eth_call": 180
+    },
+    "pinnedToSnapshotBlockCount": 30,
+    "uniqueSnapshotBlocks": [
+      "0x4d3921e",
+      "0x4d39221",
+      "0x4d39224",
+      "0x4d39227",
+      "0x4d3922a",
+      "0x4d3922d",
+      "0x4d3922f",
+      "0x4d39232",
+      "0x4d39235",
+      "0x4d39238",
+      "0x4d3923a",
+      "0x4d3923d",
+      "0x4d39240",
+      "0x4d39243",
+      "0x4d39246",
+      "0x4d39249",
+      "0x4d3924c",
+      "0x4d3924e",
+      "0x4d39251",
+      "0x4d39254",
+      "0x4d39257",
+      "0x4d3925a",
+      "0x4d3925c",
+      "0x4d3925f",
+      "0x4d39262",
+      "0x4d39265",
+      "0x4d39267",
+      "0x4d39269",
+      "0x4d3926b",
+      "0x4d3926e"
+    ]
+  },
+  "samples": [
+    {
+      "index": 1,
+      "ok": true,
+      "durationMs": 386.748,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3921e"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3921e",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 152.577,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3921e",
+          "durationMs": 171.304,
+          "httpStatus": 200,
+          "responseBytes": 15591,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3921e",
+          "durationMs": 177.423,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3921e",
+          "durationMs": 167.779,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3921e",
+          "durationMs": 231.767,
+          "httpStatus": 200,
+          "responseBytes": 5607,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3921e",
+          "durationMs": 142.963,
+          "httpStatus": 200,
+          "responseBytes": 231,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3921e",
+          "durationMs": 167.032,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 2,
+      "ok": true,
+      "durationMs": 454.078,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39221"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39221",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 148.616,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39221",
+          "durationMs": 155.477,
+          "httpStatus": 200,
+          "responseBytes": 15591,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39221",
+          "durationMs": 304.566,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39221",
+          "durationMs": 144.583,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39221",
+          "durationMs": 207.086,
+          "httpStatus": 200,
+          "responseBytes": 5607,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39221",
+          "durationMs": 143.593,
+          "httpStatus": 200,
+          "responseBytes": 231,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39221",
+          "durationMs": 145.46,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 3,
+      "ok": true,
+      "durationMs": 359.629,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39224"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39224",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 120.974,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39224",
+          "durationMs": 237.777,
+          "httpStatus": 200,
+          "responseBytes": 15591,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39224",
+          "durationMs": 158.397,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39224",
+          "durationMs": 223.558,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39224",
+          "durationMs": 157.27,
+          "httpStatus": 200,
+          "responseBytes": 5607,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39224",
+          "durationMs": 148.313,
+          "httpStatus": 200,
+          "responseBytes": 231,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39224",
+          "durationMs": 162.197,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 4,
+      "ok": true,
+      "durationMs": 354.024,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39227"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39227",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 136.518,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39227",
+          "durationMs": 175.067,
+          "httpStatus": 200,
+          "responseBytes": 15591,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39227",
+          "durationMs": 171.533,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39227",
+          "durationMs": 170.959,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39227",
+          "durationMs": 215.059,
+          "httpStatus": 200,
+          "responseBytes": 5607,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39227",
+          "durationMs": 169.374,
+          "httpStatus": 200,
+          "responseBytes": 231,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39227",
+          "durationMs": 137.853,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 5,
+      "ok": true,
+      "durationMs": 365.935,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3922a"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3922a",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 134.924,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922a",
+          "durationMs": 230.215,
+          "httpStatus": 200,
+          "responseBytes": 15591,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922a",
+          "durationMs": 165.029,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922a",
+          "durationMs": 164.726,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922a",
+          "durationMs": 226.987,
+          "httpStatus": 200,
+          "responseBytes": 5607,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922a",
+          "durationMs": 131.585,
+          "httpStatus": 200,
+          "responseBytes": 231,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922a",
+          "durationMs": 138.186,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 6,
+      "ok": true,
+      "durationMs": 342.069,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3922d"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3922d",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 136.713,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922d",
+          "durationMs": 150.953,
+          "httpStatus": 200,
+          "responseBytes": 15591,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922d",
+          "durationMs": 150.585,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922d",
+          "durationMs": 136.167,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922d",
+          "durationMs": 203.622,
+          "httpStatus": 200,
+          "responseBytes": 5607,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922d",
+          "durationMs": 135.663,
+          "httpStatus": 200,
+          "responseBytes": 231,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922d",
+          "durationMs": 158.656,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 7,
+      "ok": true,
+      "durationMs": 328.232,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3922f"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3922f",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 127.653,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922f",
+          "durationMs": 136.528,
+          "httpStatus": 200,
+          "responseBytes": 15591,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922f",
+          "durationMs": 186.654,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922f",
+          "durationMs": 155.291,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922f",
+          "durationMs": 198.179,
+          "httpStatus": 200,
+          "responseBytes": 5607,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922f",
+          "durationMs": 185.366,
+          "httpStatus": 200,
+          "responseBytes": 231,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3922f",
+          "durationMs": 183.847,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 8,
+      "ok": true,
+      "durationMs": 297.408,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39232"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39232",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 121.193,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39232",
+          "durationMs": 175.797,
+          "httpStatus": 200,
+          "responseBytes": 15591,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39232",
+          "durationMs": 175.254,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39232",
+          "durationMs": 174.336,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39232",
+          "durationMs": 174.073,
+          "httpStatus": 200,
+          "responseBytes": 5607,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39232",
+          "durationMs": 173.71,
+          "httpStatus": 200,
+          "responseBytes": 231,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39232",
+          "durationMs": 173.164,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 9,
+      "ok": true,
+      "durationMs": 350.324,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39235"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39235",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 151.8,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39235",
+          "durationMs": 156.255,
+          "httpStatus": 200,
+          "responseBytes": 15591,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39235",
+          "durationMs": 173.763,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39235",
+          "durationMs": 196.746,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39235",
+          "durationMs": 136.97,
+          "httpStatus": 200,
+          "responseBytes": 5607,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39235",
+          "durationMs": 153.822,
+          "httpStatus": 200,
+          "responseBytes": 231,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39235",
+          "durationMs": 135.942,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 10,
+      "ok": true,
+      "durationMs": 352.8,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39238"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39238",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 154.269,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39238",
+          "durationMs": 144.243,
+          "httpStatus": 200,
+          "responseBytes": 15591,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39238",
+          "durationMs": 143.806,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39238",
+          "durationMs": 143.49,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39238",
+          "durationMs": 196.632,
+          "httpStatus": 200,
+          "responseBytes": 5607,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39238",
+          "durationMs": 192.314,
+          "httpStatus": 200,
+          "responseBytes": 231,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39238",
+          "durationMs": 142.06,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 11,
+      "ok": true,
+      "durationMs": 374.878,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3923a"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3923a",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 163.805,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3923a",
+          "durationMs": 210.594,
+          "httpStatus": 200,
+          "responseBytes": 15591,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3923a",
+          "durationMs": 199.76,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3923a",
+          "durationMs": 159.253,
+          "httpStatus": 200,
+          "responseBytes": 103,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3923a",
+          "durationMs": 136.025,
+          "httpStatus": 200,
+          "responseBytes": 5607,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3923a",
+          "durationMs": 129.178,
+          "httpStatus": 200,
+          "responseBytes": 231,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3923a",
+          "durationMs": 139.552,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 12,
+      "ok": true,
+      "durationMs": 370.654,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3923d"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3923d",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 157.32,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3923d",
+          "durationMs": 161.516,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3923d",
+          "durationMs": 160.731,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3923d",
+          "durationMs": 211.091,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3923d",
+          "durationMs": 159.289,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3923d",
+          "durationMs": 142.293,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3923d",
+          "durationMs": 158.743,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 13,
+      "ok": true,
+      "durationMs": 356.034,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39240"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39240",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 122.163,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39240",
+          "durationMs": 161.161,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39240",
+          "durationMs": 135.567,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39240",
+          "durationMs": 139.876,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39240",
+          "durationMs": 231.341,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39240",
+          "durationMs": 154.593,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39240",
+          "durationMs": 151.7,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 14,
+      "ok": true,
+      "durationMs": 346.237,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39243"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39243",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 132.247,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39243",
+          "durationMs": 147.572,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39243",
+          "durationMs": 138.245,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39243",
+          "durationMs": 211.815,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39243",
+          "durationMs": 137.292,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39243",
+          "durationMs": 143.214,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39243",
+          "durationMs": 136.223,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 15,
+      "ok": true,
+      "durationMs": 360.659,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39246"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39246",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 126.537,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39246",
+          "durationMs": 212.234,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39246",
+          "durationMs": 212.088,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39246",
+          "durationMs": 211.169,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39246",
+          "durationMs": 232.303,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39246",
+          "durationMs": 210.318,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39246",
+          "durationMs": 210.284,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 16,
+      "ok": true,
+      "durationMs": 431.61,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39249"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39249",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 245.584,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39249",
+          "durationMs": 153.96,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39249",
+          "durationMs": 153.736,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39249",
+          "durationMs": 184.478,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39249",
+          "durationMs": 127.35,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39249",
+          "durationMs": 136.904,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39249",
+          "durationMs": 141.912,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 17,
+      "ok": true,
+      "durationMs": 283.983,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3924c"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3924c",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 132.473,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3924c",
+          "durationMs": 150.808,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3924c",
+          "durationMs": 149.846,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3924c",
+          "durationMs": 140.278,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3924c",
+          "durationMs": 133.75,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3924c",
+          "durationMs": 133.098,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3924c",
+          "durationMs": 147.903,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 18,
+      "ok": true,
+      "durationMs": 392.778,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3924e"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3924e",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 156.703,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3924e",
+          "durationMs": 235.266,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3924e",
+          "durationMs": 160.977,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3924e",
+          "durationMs": 149.05,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3924e",
+          "durationMs": 149.455,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3924e",
+          "durationMs": 146.178,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3924e",
+          "durationMs": 146.208,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 19,
+      "ok": true,
+      "durationMs": 346.15,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39251"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39251",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 138.342,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39251",
+          "durationMs": 155.91,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39251",
+          "durationMs": 206.152,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39251",
+          "durationMs": 161.597,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39251",
+          "durationMs": 175.977,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39251",
+          "durationMs": 160.886,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39251",
+          "durationMs": 156.603,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 20,
+      "ok": true,
+      "durationMs": 326.611,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39254"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39254",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 128.106,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39254",
+          "durationMs": 135.409,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39254",
+          "durationMs": 129.293,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39254",
+          "durationMs": 191.636,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39254",
+          "durationMs": 191.353,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39254",
+          "durationMs": 133.675,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39254",
+          "durationMs": 195.772,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 21,
+      "ok": true,
+      "durationMs": 372.336,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39257"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39257",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 143.048,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39257",
+          "durationMs": 150.577,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39257",
+          "durationMs": 164.913,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39257",
+          "durationMs": 227.424,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39257",
+          "durationMs": 149.373,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39257",
+          "durationMs": 152.236,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39257",
+          "durationMs": 148.861,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 22,
+      "ok": true,
+      "durationMs": 296.428,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3925a"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3925a",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 143.579,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925a",
+          "durationMs": 130.72,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925a",
+          "durationMs": 130.248,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925a",
+          "durationMs": 139.245,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925a",
+          "durationMs": 129.419,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925a",
+          "durationMs": 150.124,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925a",
+          "durationMs": 143.615,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 23,
+      "ok": true,
+      "durationMs": 353.127,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3925c"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3925c",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 131.071,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925c",
+          "durationMs": 152.489,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925c",
+          "durationMs": 156.024,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925c",
+          "durationMs": 174.297,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925c",
+          "durationMs": 211.087,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925c",
+          "durationMs": 157.652,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925c",
+          "durationMs": 219.754,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 24,
+      "ok": true,
+      "durationMs": 335.56,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3925f"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3925f",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 130.166,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925f",
+          "durationMs": 149.11,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925f",
+          "durationMs": 148.718,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925f",
+          "durationMs": 148.001,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925f",
+          "durationMs": 203.674,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925f",
+          "durationMs": 147.644,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3925f",
+          "durationMs": 156.821,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 25,
+      "ok": true,
+      "durationMs": 367.777,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39262"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39262",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 139.468,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39262",
+          "durationMs": 227.736,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39262",
+          "durationMs": 141.995,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39262",
+          "durationMs": 146.859,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39262",
+          "durationMs": 147.838,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39262",
+          "durationMs": 146.013,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39262",
+          "durationMs": 140.694,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 26,
+      "ok": true,
+      "durationMs": 368.908,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39265"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39265",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 153.895,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39265",
+          "durationMs": 155.509,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39265",
+          "durationMs": 155.216,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39265",
+          "durationMs": 213.435,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39265",
+          "durationMs": 128.937,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39265",
+          "durationMs": 138.327,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39265",
+          "durationMs": 153.48,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 27,
+      "ok": true,
+      "durationMs": 293.436,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39267"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39267",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 132.212,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39267",
+          "durationMs": 160.705,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39267",
+          "durationMs": 159.498,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39267",
+          "durationMs": 159.31,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39267",
+          "durationMs": 158.244,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39267",
+          "durationMs": 157.991,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39267",
+          "durationMs": 157.72,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 28,
+      "ok": true,
+      "durationMs": 346.105,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39269"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39269",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 135.187,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39269",
+          "durationMs": 210.34,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39269",
+          "durationMs": 208.822,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39269",
+          "durationMs": 140.133,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39269",
+          "durationMs": 144.559,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39269",
+          "durationMs": 139.225,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d39269",
+          "durationMs": 171.099,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 29,
+      "ok": true,
+      "durationMs": 322.786,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3926b"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3926b",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 123.232,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3926b",
+          "durationMs": 152.306,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3926b",
+          "durationMs": 163.355,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3926b",
+          "durationMs": 140.166,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3926b",
+          "durationMs": 139.765,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3926b",
+          "durationMs": 197.54,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3926b",
+          "durationMs": 162.36,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 30,
+      "ok": true,
+      "durationMs": 337.549,
+      "httpRequestCount": 7,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3926e"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3926e",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "blockTag": null,
+          "durationMs": 130.268,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3926e",
+          "durationMs": 153.962,
+          "httpStatus": 200,
+          "responseBytes": 15592,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3926e",
+          "durationMs": 150.603,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3926e",
+          "durationMs": 149.967,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3926e",
+          "durationMs": 205.215,
+          "httpStatus": 200,
+          "responseBytes": 5608,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3926e",
+          "durationMs": 148.929,
+          "httpStatus": 200,
+          "responseBytes": 232,
+          "ok": true
+        },
+        {
+          "method": "eth_call",
+          "blockTag": "0x4d3926e",
+          "durationMs": 151.069,
+          "httpStatus": 200,
+          "responseBytes": 104,
+          "ok": true
+        }
+      ],
+      "error": null
+    }
+  ],
+  "security": {
+    "privateKeyRead": false,
+    "transactionsSent": 0,
+    "note": "This read-only tool does not load .env or require signing credentials."
+  }
+}

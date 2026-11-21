@@ -1,0 +1,35 @@
+{
+  "network": "Anvil-local",
+  "publicMonadTestnet": false,
+  "contract": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+  "block": "0x4",
+  "participants": 3,
+  "transactions": [
+    {
+      "from": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "cell": 41,
+      "kind": 2,
+      "tx": "0x93c2b8705152bfcbc2279d81fe6df9240e014335cd15c5e0bf48d06a6fecb010",
+      "block": "0x2"
+    },
+    {
+      "from": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "cell": 50,
+      "kind": 3,
+      "tx": "0x82fad8719bca038fb4a54a101855b79718247fafb434ad56e3420520d01b3384",
+      "block": "0x3"
+    },
+    {
+      "from": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "cell": 49,
+      "kind": 4,
+      "tx": "0xff884d6abddc4d5ae9aa3ef131ce11655925fdaaa073c76e18dfdea233bb25ec",
+      "block": "0x4"
+    }
+  ],
+  "threeClientsIdentical": true,
+  "ownersVerified": true,
+  "occupiedTileRejected": true,
+  "unauthorizedDismantleRejected": true,
+  "frontendIntegrated": false
+}

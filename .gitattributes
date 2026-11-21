@@ -1,0 +1,5 @@
+# Preserve the upstream bytes and published SHA-256 of the vendored runtime.
+frontend/vendor/three*.js -text whitespace=-space-before-tab
+contracts/*.sol text eol=lf
+contracts/test/*.sol text eol=lf
+frontend/vendor/qrcode.mjs -text whitespace=-space-before-tab,-blank-at-eol

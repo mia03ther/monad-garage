@@ -1,0 +1,83 @@
+{
+  "format": "genesis.studio-report",
+  "version": 1,
+  "mode": "browser-local-observation",
+  "prediction": 2,
+  "result": {
+    "epoch_id": "epoch:42:60:4:5:0:10",
+    "seed": 42,
+    "days": 60,
+    "num_civs": 4,
+    "residents_per_civ": 5,
+    "tax_rate_bps": 0,
+    "max_orders_per_day": 10,
+    "civs": [
+      {
+        "id": 0,
+        "name": "Aurora",
+        "seed": 42000,
+        "digest": "5cc5c15f8ac814d5d811c03211052243b6b9c7ab8c0d1282b8a250f14b90e1e7",
+        "alive": 5,
+        "wealth": 93163,
+        "health": 500,
+        "score": 5143163,
+        "trades": 581,
+        "units": 587,
+        "value": 185308
+      },
+      {
+        "id": 1,
+        "name": "Boreas",
+        "seed": 42001,
+        "digest": "f5240d801e4124c0c0273e9c5d6fdc777ab0b404eb2bc3cfa03dd7689ae71418",
+        "alive": 5,
+        "wealth": 94121,
+        "health": 500,
+        "score": 5144121,
+        "trades": 577,
+        "units": 585,
+        "value": 185857
+      },
+      {
+        "id": 2,
+        "name": "Cinder",
+        "seed": 42002,
+        "digest": "5c877da950f964e424fd66ad88f8aa86d14c75a7893d3d07915c6e7c5a82aadd",
+        "alive": 5,
+        "wealth": 94627,
+        "health": 500,
+        "score": 5144627,
+        "trades": 585,
+        "units": 590,
+        "value": 183912
+      },
+      {
+        "id": 3,
+        "name": "Dune",
+        "seed": 42003,
+        "digest": "51ac5c9d8553880d634c785914851c9da712acc334bf747fe5875343c78b9659",
+        "alive": 5,
+        "wealth": 93061,
+        "health": 500,
+        "score": 5143061,
+        "trades": 521,
+        "units": 555,
+        "value": 199879
+      }
+    ],
+    "currency": "play_credits",
+    "play_money_note": "演示积分 · 不是真钱",
+    "digest": "b25c8fb3e94f746bf4d29fd7118ecd0fb72b23b8386eda76b35830e00cfab9fc",
+    "winner": 2,
+    "winner_name": "Cinder"
+  },
+  "verification": {
+    "passed": true,
+    "observed": "b25c8fb3e94f746bf4d29fd7118ecd0fb72b23b8386eda76b35830e00cfab9fc",
+    "reference": "b25c8fb3e94f746bf4d29fd7118ecd0fb72b23b8386eda76b35830e00cfab9fc"
+  },
+  "chain": {
+    "submitted": false,
+    "note": "This epoch has not been submitted to a blockchain by this page."
+  }
+}

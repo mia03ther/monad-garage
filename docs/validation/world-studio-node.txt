@@ -1,0 +1,17 @@
+✔ incremental scene playback equals canonical epoch and is camera-independent (1027.8887ms)
+✔ rewinding reconstructs the same state; prediction never changes result (175.6917ms)
+✔ snapshot edits cannot create inventory, health, cash or fake events (4.9969ms)
+✔ incomplete and invalid operations fail explicitly; no false proof (1.768ms)
+✔ resource scarcity changes actual engine outcome, not just scenery (98.4617ms)
+✔ motion is relative to view, bounded, collision-aware and jump returns to ground (1.1214ms)
+✔ original scene has selectable engine residents, finite geometry and working ray selection (146.4267ms)
+✔ scarcity is represented by the actual resident survival flags (49.2705ms)
+✔ the actual browser-exported report replays to the canonical result (89.9184ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2056.4725

@@ -1,0 +1,10 @@
+{
+  "runtimeHash": "1c7b940a4e531fd14d7b57ff56d9fce4f279473bafdaebdbb70f82446d5bd89b",
+  "methods": {
+    "championVersion()": "53990b4e",
+    "lapTime(uint8,uint8,uint8)": "cca6fe2d",
+    "nextVersion()": "0bafd60e",
+    "publish(uint256,uint8,uint8,uint8)": "e8710a90",
+    "read(uint256)": "ed2e5a97"
+  }
+}

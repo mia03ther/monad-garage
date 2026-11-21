@@ -1,0 +1,29 @@
+✔ three roles restore the island; removing the source changes the actual goal (6.12ms)
+✔ invalid, occupied and foreign-owned actions are atomic (0.8352ms)
+✔ refunds do not duplicate allowance and zero supply routes cannot power disconnected modules (3.5596ms)
+✔ scene adapter and ABI encoding preserve cell identity and validate sizes (1.1731ms)
+✔ malformed practice imports cannot change balances or inject snapshots (0.4895ms)
+✔ build, power, production and dismantle change the real sandbox state (1.6079ms)
+✔ repeated place/remove never duplicates materials (0.2854ms)
+✔ reject malformed actions, overlaps, bounds, insufficient funds and protected core atomically (2.9802ms)
+✔ deterministic portable blueprint replays exactly and ABI round trips (2.9298ms)
+✔ disconnected production does not create materials (0.1983ms)
+✔ chain gateway fails closed for wrong chain, unconfirmed receipt and wrong target (67.1628ms)
+✔ actual browser build, dismantle, rebuild and day advance replay correctly (37.08ms)
+✔ incremental scene playback equals canonical epoch and is camera-independent (716.5769ms)
+✔ rewinding reconstructs the same state; prediction never changes result (104.1459ms)
+✔ snapshot edits cannot create inventory, health, cash or fake events (2.6969ms)
+✔ incomplete and invalid operations fail explicitly; no false proof (1.0892ms)
+✔ resource scarcity changes actual engine outcome, not just scenery (62.3087ms)
+✔ motion is relative to view, bounded, collision-aware and jump returns to ground (0.4295ms)
+✔ original scene has selectable engine residents, finite geometry and working ray selection (54.2131ms)
+✔ scarcity is represented by the actual resident survival flags (26.1588ms)
+✔ the actual browser-exported report replays to the canonical result (107.3219ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1731.6125

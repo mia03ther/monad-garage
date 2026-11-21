@@ -1,0 +1,1961 @@
+{
+  "format": "genesis.monad-gateway-read-batch.v1",
+  "measuredAt": "2026-11-19T07:28:34.284Z",
+  "publicMonadTestnet": true,
+  "chainId": 10143,
+  "rpc": "https://testnet-rpc.monad.xyz",
+  "contract": "0xb1EEA6F45B37098f62Fe6cA484441F846eb42C1A",
+  "actor": "0xc338e05fD4F8322E1562DB052c42995223254B97",
+  "gatewaySource": "frontend/community/gateway.js#CommunityGateway.read",
+  "configuration": {
+    "samples": 30,
+    "warmup": 3,
+    "delayMs": 500,
+    "timeoutMs": 12000,
+    "actorIncluded": true,
+    "mode": "batch"
+  },
+  "preflight": {
+    "ok": true,
+    "durationMs": 756.154,
+    "httpRequestCount": 2,
+    "rpcMethodCounts": {
+      "eth_chainId": 1,
+      "eth_getCode": 1
+    }
+  },
+  "warmupSummary": {
+    "count": 3,
+    "durationMs": {
+      "min": 304.946,
+      "mean": 335.684,
+      "p50": 350.809,
+      "p95": 351.298,
+      "max": 351.298
+    }
+  },
+  "summary": {
+    "sampleCount": 30,
+    "successCount": 30,
+    "failureCount": 0,
+    "successRate": 1,
+    "durationMs": {
+      "min": 266.133,
+      "mean": 336.536,
+      "p50": 316.928,
+      "p95": 477.506,
+      "max": 481.837
+    },
+    "httpRequestsPerRead": {
+      "min": 2,
+      "mean": 2,
+      "p50": 2,
+      "p95": 2,
+      "max": 2
+    },
+    "totalHttpRequestCount": 60,
+    "rpcMethodCounts": {
+      "eth_blockNumber": 30,
+      "eth_call": 180
+    },
+    "pinnedToSnapshotBlockCount": 30,
+    "uniqueSnapshotBlocks": [
+      "0x4d39777",
+      "0x4d3977a",
+      "0x4d3977d",
+      "0x4d3977f",
+      "0x4d39782",
+      "0x4d39785",
+      "0x4d39787",
+      "0x4d3978a",
+      "0x4d3978d",
+      "0x4d39790",
+      "0x4d39793",
+      "0x4d39796",
+      "0x4d39799",
+      "0x4d3979c",
+      "0x4d3979e",
+      "0x4d397a1",
+      "0x4d397a4",
+      "0x4d397a6",
+      "0x4d397a9",
+      "0x4d397ac",
+      "0x4d397af",
+      "0x4d397b1",
+      "0x4d397b4",
+      "0x4d397b7",
+      "0x4d397ba",
+      "0x4d397bc",
+      "0x4d397bf",
+      "0x4d397c3",
+      "0x4d397c5"
+    ]
+  },
+  "samples": [
+    {
+      "index": 1,
+      "ok": true,
+      "durationMs": 278.058,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39777"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39777",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 124.856,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d39777",
+            "0x4d39777",
+            "0x4d39777",
+            "0x4d39777",
+            "0x4d39777",
+            "0x4d39777"
+          ],
+          "batchSize": 6,
+          "durationMs": 152.532,
+          "httpStatus": 200,
+          "responseBytes": 21745,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 2,
+      "ok": true,
+      "durationMs": 321.829,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3977a"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3977a",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 160.208,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d3977a",
+            "0x4d3977a",
+            "0x4d3977a",
+            "0x4d3977a",
+            "0x4d3977a",
+            "0x4d3977a"
+          ],
+          "batchSize": 6,
+          "durationMs": 161.223,
+          "httpStatus": 200,
+          "responseBytes": 21745,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 3,
+      "ok": true,
+      "durationMs": 266.133,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3977d"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3977d",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 135.063,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d3977d",
+            "0x4d3977d",
+            "0x4d3977d",
+            "0x4d3977d",
+            "0x4d3977d",
+            "0x4d3977d"
+          ],
+          "batchSize": 6,
+          "durationMs": 130.24,
+          "httpStatus": 200,
+          "responseBytes": 21745,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 4,
+      "ok": true,
+      "durationMs": 430.711,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3977f"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3977f",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 189.76,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d3977f",
+            "0x4d3977f",
+            "0x4d3977f",
+            "0x4d3977f",
+            "0x4d3977f",
+            "0x4d3977f"
+          ],
+          "batchSize": 6,
+          "durationMs": 240.348,
+          "httpStatus": 200,
+          "responseBytes": 21745,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 5,
+      "ok": true,
+      "durationMs": 283.305,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39782"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39782",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 138.518,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d39782",
+            "0x4d39782",
+            "0x4d39782",
+            "0x4d39782",
+            "0x4d39782",
+            "0x4d39782"
+          ],
+          "batchSize": 6,
+          "durationMs": 144.38,
+          "httpStatus": 200,
+          "responseBytes": 21745,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 6,
+      "ok": true,
+      "durationMs": 298.159,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39785"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39785",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 149.079,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d39785",
+            "0x4d39785",
+            "0x4d39785",
+            "0x4d39785",
+            "0x4d39785",
+            "0x4d39785"
+          ],
+          "batchSize": 6,
+          "durationMs": 148.588,
+          "httpStatus": 200,
+          "responseBytes": 21745,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 7,
+      "ok": true,
+      "durationMs": 481.837,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39787"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39787",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 273.478,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d39787",
+            "0x4d39787",
+            "0x4d39787",
+            "0x4d39787",
+            "0x4d39787",
+            "0x4d39787"
+          ],
+          "batchSize": 6,
+          "durationMs": 207.795,
+          "httpStatus": 200,
+          "responseBytes": 21745,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 8,
+      "ok": true,
+      "durationMs": 304.461,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3978a"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3978a",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 150.857,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d3978a",
+            "0x4d3978a",
+            "0x4d3978a",
+            "0x4d3978a",
+            "0x4d3978a",
+            "0x4d3978a"
+          ],
+          "batchSize": 6,
+          "durationMs": 152.86,
+          "httpStatus": 200,
+          "responseBytes": 21745,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 9,
+      "ok": true,
+      "durationMs": 285.059,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3978d"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3978d",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 139.015,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d3978d",
+            "0x4d3978d",
+            "0x4d3978d",
+            "0x4d3978d",
+            "0x4d3978d",
+            "0x4d3978d"
+          ],
+          "batchSize": 6,
+          "durationMs": 145.653,
+          "httpStatus": 200,
+          "responseBytes": 21745,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 10,
+      "ok": true,
+      "durationMs": 361.582,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39790"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39790",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 144.245,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d39790",
+            "0x4d39790",
+            "0x4d39790",
+            "0x4d39790",
+            "0x4d39790",
+            "0x4d39790"
+          ],
+          "batchSize": 6,
+          "durationMs": 216.939,
+          "httpStatus": 200,
+          "responseBytes": 21745,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 11,
+      "ok": true,
+      "durationMs": 427.701,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39793"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39793",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 152.852,
+          "httpStatus": 200,
+          "responseBytes": 46,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d39793",
+            "0x4d39793",
+            "0x4d39793",
+            "0x4d39793",
+            "0x4d39793",
+            "0x4d39793"
+          ],
+          "batchSize": 6,
+          "durationMs": 274.491,
+          "httpStatus": 200,
+          "responseBytes": 21746,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 12,
+      "ok": true,
+      "durationMs": 414.417,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39796"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39796",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 152.813,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d39796",
+            "0x4d39796",
+            "0x4d39796",
+            "0x4d39796",
+            "0x4d39796",
+            "0x4d39796"
+          ],
+          "batchSize": 6,
+          "durationMs": 260.902,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 13,
+      "ok": true,
+      "durationMs": 275.014,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d39799"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d39799",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 132.475,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d39799",
+            "0x4d39799",
+            "0x4d39799",
+            "0x4d39799",
+            "0x4d39799",
+            "0x4d39799"
+          ],
+          "batchSize": 6,
+          "durationMs": 142.23,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 14,
+      "ok": true,
+      "durationMs": 366.017,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3979c"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3979c",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 170.672,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d3979c",
+            "0x4d3979c",
+            "0x4d3979c",
+            "0x4d3979c",
+            "0x4d3979c",
+            "0x4d3979c"
+          ],
+          "batchSize": 6,
+          "durationMs": 195.083,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 15,
+      "ok": true,
+      "durationMs": 325.333,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d3979e"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d3979e",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 162.967,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d3979e",
+            "0x4d3979e",
+            "0x4d3979e",
+            "0x4d3979e",
+            "0x4d3979e",
+            "0x4d3979e"
+          ],
+          "batchSize": 6,
+          "durationMs": 161.968,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 16,
+      "ok": true,
+      "durationMs": 307.215,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397a1"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397a1",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 147.952,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397a1",
+            "0x4d397a1",
+            "0x4d397a1",
+            "0x4d397a1",
+            "0x4d397a1",
+            "0x4d397a1"
+          ],
+          "batchSize": 6,
+          "durationMs": 158.845,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 17,
+      "ok": true,
+      "durationMs": 308.358,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397a4"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397a4",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 160.065,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397a4",
+            "0x4d397a4",
+            "0x4d397a4",
+            "0x4d397a4",
+            "0x4d397a4",
+            "0x4d397a4"
+          ],
+          "batchSize": 6,
+          "durationMs": 147.998,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 18,
+      "ok": true,
+      "durationMs": 284.389,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397a6"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397a6",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 142.379,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397a6",
+            "0x4d397a6",
+            "0x4d397a6",
+            "0x4d397a6",
+            "0x4d397a6",
+            "0x4d397a6"
+          ],
+          "batchSize": 6,
+          "durationMs": 141.42,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 19,
+      "ok": true,
+      "durationMs": 363.758,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397a9"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397a9",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 164.312,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397a9",
+            "0x4d397a9",
+            "0x4d397a9",
+            "0x4d397a9",
+            "0x4d397a9",
+            "0x4d397a9"
+          ],
+          "batchSize": 6,
+          "durationMs": 199.275,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 20,
+      "ok": true,
+      "durationMs": 427.142,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397ac"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397ac",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 156.105,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397ac",
+            "0x4d397ac",
+            "0x4d397ac",
+            "0x4d397ac",
+            "0x4d397ac",
+            "0x4d397ac"
+          ],
+          "batchSize": 6,
+          "durationMs": 270.75,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 21,
+      "ok": true,
+      "durationMs": 324.854,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397af"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397af",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 154.944,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397af",
+            "0x4d397af",
+            "0x4d397af",
+            "0x4d397af",
+            "0x4d397af",
+            "0x4d397af"
+          ],
+          "batchSize": 6,
+          "durationMs": 169.7,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 22,
+      "ok": true,
+      "durationMs": 306.35,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397b1"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397b1",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 140.196,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397b1",
+            "0x4d397b1",
+            "0x4d397b1",
+            "0x4d397b1",
+            "0x4d397b1",
+            "0x4d397b1"
+          ],
+          "batchSize": 6,
+          "durationMs": 165.947,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 23,
+      "ok": true,
+      "durationMs": 334.923,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397b4"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397b4",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 157.375,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397b4",
+            "0x4d397b4",
+            "0x4d397b4",
+            "0x4d397b4",
+            "0x4d397b4",
+            "0x4d397b4"
+          ],
+          "batchSize": 6,
+          "durationMs": 177.206,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 24,
+      "ok": true,
+      "durationMs": 279.292,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397b7"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397b7",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 140.32,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397b7",
+            "0x4d397b7",
+            "0x4d397b7",
+            "0x4d397b7",
+            "0x4d397b7",
+            "0x4d397b7"
+          ],
+          "batchSize": 6,
+          "durationMs": 138.661,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 25,
+      "ok": true,
+      "durationMs": 303.801,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397ba"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397ba",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 138.628,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397ba",
+            "0x4d397ba",
+            "0x4d397ba",
+            "0x4d397ba",
+            "0x4d397ba",
+            "0x4d397ba"
+          ],
+          "batchSize": 6,
+          "durationMs": 164.718,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 26,
+      "ok": true,
+      "durationMs": 301.367,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397bc"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397bc",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 150.744,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397bc",
+            "0x4d397bc",
+            "0x4d397bc",
+            "0x4d397bc",
+            "0x4d397bc",
+            "0x4d397bc"
+          ],
+          "batchSize": 6,
+          "durationMs": 150.139,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 27,
+      "ok": true,
+      "durationMs": 319.598,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397bf"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397bf",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 155.268,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397bf",
+            "0x4d397bf",
+            "0x4d397bf",
+            "0x4d397bf",
+            "0x4d397bf",
+            "0x4d397bf"
+          ],
+          "batchSize": 6,
+          "durationMs": 164.056,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 28,
+      "ok": true,
+      "durationMs": 477.506,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397bf"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397bf",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 275.356,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397bf",
+            "0x4d397bf",
+            "0x4d397bf",
+            "0x4d397bf",
+            "0x4d397bf",
+            "0x4d397bf"
+          ],
+          "batchSize": 6,
+          "durationMs": 201.672,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 29,
+      "ok": true,
+      "durationMs": 320.997,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397c3"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397c3",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 164.767,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397c3",
+            "0x4d397c3",
+            "0x4d397c3",
+            "0x4d397c3",
+            "0x4d397c3",
+            "0x4d397c3"
+          ],
+          "batchSize": 6,
+          "durationMs": 155.958,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "index": 30,
+      "ok": true,
+      "durationMs": 316.928,
+      "httpRequestCount": 2,
+      "rpcMethodCounts": {
+        "eth_blockNumber": 1,
+        "eth_call": 6
+      },
+      "blockTags": [
+        "0x4d397c5"
+      ],
+      "pinnedToSnapshotBlock": true,
+      "snapshot": {
+        "block": "0x4d397c5",
+        "revision": 1,
+        "participants": 1,
+        "balance": 7,
+        "phase": 3
+      },
+      "requests": [
+        {
+          "method": "eth_blockNumber",
+          "rpcMethods": [
+            "eth_blockNumber"
+          ],
+          "blockTag": null,
+          "blockTags": [],
+          "batchSize": 1,
+          "durationMs": 119.486,
+          "httpStatus": 200,
+          "responseBytes": 47,
+          "ok": true
+        },
+        {
+          "method": "rpc_batch",
+          "rpcMethods": [
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call",
+            "eth_call"
+          ],
+          "blockTag": null,
+          "blockTags": [
+            "0x4d397c5",
+            "0x4d397c5",
+            "0x4d397c5",
+            "0x4d397c5",
+            "0x4d397c5",
+            "0x4d397c5"
+          ],
+          "batchSize": 6,
+          "durationMs": 197.021,
+          "httpStatus": 200,
+          "responseBytes": 21751,
+          "ok": true
+        }
+      ],
+      "error": null
+    }
+  ],
+  "security": {
+    "privateKeyRead": false,
+    "transactionsSent": 0,
+    "note": "This read-only tool does not load .env or require signing credentials."
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "network": "Anvil-local",
+  "chainId": 31337,
+  "publicMonadTestnet": false,
+  "contract": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+  "trace": [
+    {
+      "actor": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "type": "build",
+      "cell": 41,
+      "kind": 2,
+      "rotation": 0,
+      "tx": "0x0e8216151d615344e18daa5824e6a03ae40d2af2135706ce2dee8eb5809ac8d8"
+    },
+    {
+      "actor": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "type": "build",
+      "cell": 49,
+      "kind": 3,
+      "rotation": 0,
+      "tx": "0x8a414c2ab83e88254e0f7910acd527a52c34b33e43a7135177eaed1bfb9eea29"
+    },
+    {
+      "actor": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "type": "build",
+      "cell": 39,
+      "kind": 4,
+      "rotation": 0,
+      "tx": "0x02eb701a158e9997b7c1129aa42caa4d975f73bebaaddd2399f0d49195e99428"
+    },
+    {
+      "actor": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+      "type": "build",
+      "cell": 50,
+      "kind": 3,
+      "rotation": 0,
+      "tx": "0xedf5aa2dbc87d9be425a267ff9e5aedbab5c05914bec339ea0bb27a0d0bfae13"
+    },
+    {
+      "actor": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "type": "build",
+      "cell": 31,
+      "kind": 7,
+      "rotation": 0,
+      "tx": "0x97c280f05832e573a0955719de712c92a26c6aa14bd823d730d1182392b091c8"
+    }
+  ],
+  "finalBlock": "0x8",
+  "revision": 7,
+  "threeClientsEqual": true,
+  "restored": true,
+  "idempotentRetry": true,
+  "ownerEnforced": true,
+  "occupiedTileRejected": true,
+  "crossOriginRejected": true,
+  "arbitrarySigningRpcRejected": true,
+  "sessionRequired": true,
+  "powerLossAndRecovery": true,
+  "eventCount": 7,
+  "timedGoalCompleted": true,
+  "hostOnlyRestart": true,
+  "staleRoundActionRejected": true,
+  "nextRoundContract": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+  "nextRoundWaiting": true,
+  "browserUiVerified": false
+}
