@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>GENESIS LIVE · CITY ZERO</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="community/style.css" />
+  </head>
+  <body class="game">
+    <canvas
+      id="scene"
+      tabindex="0"
+      aria-label="CITY ZERO shared construction grid"
+    ></canvas>
+    <header>
+      <a class="brand" href="index.html"
+        >◈ GENESIS LIVE<span>CITY ZERO / MONAD</span></a
+      >
+      <div class="header-actions">
+        <span id="mode" class="badge">ROOM STANDBY</span
+        ><button id="help" aria-label="打开任务教程">?</button
+        ><button id="invite">邀请队友 ↗</button><button id="menu">房间</button>
+      </div>
+    </header>
+    <div class="broadcast" aria-hidden="true">
+      <i></i><b>LIVE</b><span>CITY ZERO EMERGENCY NETWORK</span
+      ><em id="latency">CONFIRMATION —</em>
+    </div>
+    <section class="objective">
+      <span class="eyebrow">CITY ZERO / GRID FAILURE</span>
+      <h1 id="headline">CITY ZERO IS<br />LOSING POWER.</h1>
+      <p id="objective-copy">接通四个生命系统。单人无法完成。</p>
+      <div id="goals" aria-live="polite"></div>
+      <button id="tour">预演任务</button>
+    </section>
+    <section class="meters" aria-label="Room status">
+      <div class="round-clock">
+        <span>MISSION / 任务</span><b id="clock">练习 / 无计时</b>
+      </div>
+      <div><span id="people-label">队员</span><b id="people">0</b></div>
+      <div><span>用电</span><b id="power">1</b></div>
+      <div><span>居住舱</span><b id="homes">0/2</b></div>
+      <div><span>已确认操作</span><b id="confirmed-actions">0</b></div>
+      <div><span>本机 P50</span><b id="median-latency">—</b></div>
+    </section>
+    <section id="wall-invite" hidden>
+      <h2>扫码加入，接管城市。</h2>
+      <div id="wall-qr"></div>
+      <p id="wall-url"></p>
+      <small id="wall-source"></small>
+    </section>
+    <section class="activity">
+      <span class="eyebrow">LIVE COORDINATION TRACE</span>
+      <ol id="feed">
+        <li>先接通第一座风力塔。</li>
+      </ol>
+    </section>
+    <div id="message" role="status">选择一个小队，贡献你的下一步。</div>
+    <section id="action" class="action-sheet" hidden>
+      <button id="cancel" class="close" aria-label="Cancel action">×</button
+      ><span class="eyebrow" id="action-caption"></span>
+      <h2 id="action-title"></h2>
+      <p id="action-detail"></p>
+      <button class="primary" id="confirm">确认操作</button>
+    </section>
+    <footer>
+      <section class="crew-console" aria-label="Choose a mission crew">
+        <div id="crews"></div>
+        <button id="quick-action" class="quick-action">
+          <small>YOUR NEXT MOVE</small><strong>选择行动小队</strong
+          ><span>ONE TAP · ONE CONFIRMED ACTION</span>
+        </button>
+      </section>
+      <section id="manual-tools" hidden>
+        <div id="palette" aria-label="Select construction module"></div>
+      </section>
+      <div class="bottom">
+        <span id="identity">LOCAL PRACTICE</span><b id="budget">12 额度</b
+        ><button id="advanced">高级建造</button><button id="rotate">旋转 R · 0°</button
+        ><button id="walk">进入城市</button><button id="role">切换角色 A</button
+        ><button id="download">导出记录</button>
+      </div>
+      <small id="provenance">Practice state is not submitted onchain.</small>
+    </footer>
+    <div id="dpad" aria-label="Touch movement controls">
+      <button data-move="w" aria-label="Move forward">↑</button
+      ><button data-move="a" aria-label="Move left">←</button
+      ><button data-move="s" aria-label="Move backward">↓</button
+      ><button data-move="d" aria-label="Move right">→</button>
+    </div>
+    <dialog id="briefing-dialog" class="briefing">
+      <button id="briefing-close" class="close" aria-label="关闭任务教程">
+        ×</button
+      ><span class="eyebrow">MISSION</span>
+      <div class="briefing-count">90<span>SEC</span></div>
+      <h2>全场就是控制器。</h2>
+      <p class="briefing-lead">至少 3 人协作。选择小队，每次点击改变同一个世界。</p>
+      <div class="briefing-flow">
+        <b>选小队</b><i>→</i><b>一键贡献</b><i>→</i><b>全场见证确认</b>
+      </div>
+      <p class="mission-rule">POWER → HABITAT ×2 → LIFE + SIGNAL · 至少 3 人</p>
+      <div class="briefing-actions">
+        <button id="briefing-start" class="primary">立即练习</button
+        ><button id="briefing-live">加入现场房间</button>
+      </div>
+      <small>现场变化以合约确认结果为准。</small>
+    </dialog>
+    <dialog id="room-dialog">
+      <button id="restart-room" hidden>主持人：新开 90 秒任务</button>
+      <button id="room-close" class="close" aria-label="Close room settings">
+        ×</button
+      ><span class="eyebrow">YOUR PLACE IN THE WORLD</span>
+      <h2>召集你的队伍。</h2>
+      <p id="room-explain">练习无需钱包；测试网房间需要钱包和测试 MON。</p>
+      <label
+        >代号<input
+          id="nickname"
+          maxlength="20"
+          value="Operator"
+          autocomplete="nickname" /></label
+      ><button class="primary" id="join">加入任务</button>
+      <hr />
+      <label
+        >MONAD TESTNET ROOM ADDRESS<input
+          id="address"
+          placeholder="0x…"
+          spellcheck="false"
+      /></label>
+      <div class="dialog-actions">
+        <button id="open-room">打开房间</button
+        ><button id="create-room">创建房间 · TEST MON</button>
+      </div>
+      <a href="https://faucet.monad.xyz" target="_blank" rel="noopener"
+        >获取 TEST MON ↗</a
+      >
+      <p id="room-result" role="status"></p>
+      <details>
+        <summary>EVENT AND PRACTICE MODES</summary>
+        <p>
+          The live wall joins the same room and reads the same confirmed state.
+          The local rehearsal chain is separate from Monad Testnet.
+        </p>
+        <button id="practice">RETURN TO PRACTICE</button
+        ><button id="reset-practice">RESET PRACTICE</button>
+      </details>
+    </dialog>
+    <dialog id="invite-dialog">
+      <button id="invite-close" class="close" aria-label="Close invitation">
+        ×</button
+      ><span class="eyebrow">MAKE ROOM FOR ONE MORE</span>
+      <h2>邀请下一位队员。</h2>
+      <div id="qr"></div>
+      <p id="share-note"></p>
+      <input id="share-url" readonly aria-label="Invitation URL" /><button
+        id="copy"
+        class="primary"
+      >
+        复制邀请链接</button
+      ><a id="projection" target="_blank" rel="noopener">打开现场大屏 ↗</a>
+    </dialog>
+    <script type="module" src="community/app.js"></script>
+  </body>
+</html>

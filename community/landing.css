@@ -1,0 +1,164 @@
+:root {
+  color: #f2efe7;
+  background: #080808;
+  font-family: Inter, ui-sans-serif, system-ui, "Microsoft YaHei", sans-serif;
+  --ink: #f2efe7;
+  --muted: #9b9992;
+  --line: #373632;
+  --panel: #111110;
+  --monad: #836ef9;
+  --signal: #f0ff66;
+}
+* { box-sizing: border-box; }
+html { color-scheme: dark; }
+body {
+  margin: 0;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background: #080808;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  opacity: .12;
+  background: repeating-linear-gradient(0deg, transparent 0 3px, #fff 4px);
+  mix-blend-mode: soft-light;
+}
+a { color: inherit; text-decoration: none; }
+:focus-visible { outline: 2px solid var(--signal); outline-offset: 4px; }
+.hero {
+  position: relative;
+  min-height: 100dvh;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+}
+.key-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 67% center;
+  filter: saturate(.72) contrast(1.12) brightness(.78);
+  user-select: none;
+  pointer-events: none;
+}
+.veil {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, #080808 0 32%, #080808d4 44%, transparent 72%),
+    linear-gradient(0deg, #080808 0%, transparent 34%);
+}
+header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 4vw;
+  border-bottom: 1px solid #ffffff1a;
+}
+.logo {
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+nav { display: flex; gap: 24px; font-size: 10px; letter-spacing: 1.5px; }
+nav a { padding-bottom: 5px; border-bottom: 2px solid var(--signal); }
+main {
+  position: relative;
+  z-index: 1;
+  width: min(680px, 88vw);
+  margin: 12vh 0 0 4vw;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font: 800 9px/1 ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: 2.5px;
+}
+.eyebrow span {
+  padding: 6px 9px;
+  color: #080808;
+  background: var(--signal);
+  letter-spacing: 1px;
+}
+h1 {
+  max-width: 760px;
+  margin: 24px 0;
+  color: var(--ink);
+  font-size: clamp(62px, 7.8vw, 126px);
+  font-weight: 950;
+  letter-spacing: -.07em;
+  line-height: .82;
+  text-transform: uppercase;
+}
+h1 em { color: var(--monad); font-style: normal; }
+.intro {
+  max-width: 520px;
+  margin: 0;
+  color: #cfccc4;
+  font-size: clamp(14px, 1.25vw, 18px);
+  line-height: 1.65;
+}
+.actions { display: flex; align-items: center; gap: 22px; margin-top: 30px; }
+.primary {
+  display: flex;
+  min-width: 230px;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 17px 20px;
+  color: #080808;
+  border: 1px solid var(--signal);
+  background: var(--signal);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: transform 120ms ease, background 120ms ease;
+}
+.primary:hover { background: #fff; transform: translateY(-2px); }
+.caption {
+  margin-top: 14px;
+  color: #77756f;
+  font: 9px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: 1px;
+}
+footer {
+  position: absolute;
+  z-index: 1;
+  right: 4vw;
+  bottom: 24px;
+  left: 4vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #77756f;
+  font: 8px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: 1.5px;
+}
+footer div { display: flex; gap: 22px; }
+footer a:hover { color: var(--signal); }
+@media (max-width: 760px) {
+  .hero { min-height: 100svh; }
+  .key-art { height: 54%; object-position: 61% top; filter: saturate(.7) contrast(1.1) brightness(.7); }
+  .veil {
+    background:
+      linear-gradient(180deg, #0808084d 0 28%, #080808 54% 100%),
+      linear-gradient(90deg, #080808a8, transparent 80%);
+  }
+  header { padding: 18px 16px; }
+  .logo { font-size: 14px; letter-spacing: 2.5px; }
+  nav { font-size: 9px; }
+  main { width: auto; margin: 46vh 18px 120px; }
+  h1 { margin: 18px 0; font-size: clamp(52px, 17vw, 72px); }
+  .intro { font-size: 13px; }
+  .primary { width: 100%; min-width: 0; }
+  footer { right: 18px; bottom: 14px; left: 18px; flex-direction: column; gap: 8px; }
+}
